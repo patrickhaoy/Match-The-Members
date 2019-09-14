@@ -18,14 +18,14 @@ class StatisticsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var text = "Big Bear says:\n\n\n\nYour longest streak is \(longestStreak!)!\n\n"
+        var text = "Big Bear says:\n\nYour longest streak is \(longestStreak!)!\n"
         
         for i in 0..<pastResults!.count {
             if pastResults.indices.contains(i) {
                 if pastResults[i].correct == "correct" {
-                    text += "\(order[i]), you were correct! You guessed \(pastResults[i].guess!). \n\n"
+                    text += "\(order[i]), you were correct! You guessed \(pastResults[i].guess!). \n"
                 } else {
-                    text += "\(order[i]), you were incorrect! You guessed \(pastResults[i].guess!). The correct person was \(pastResults[i].answer!).\n\n"
+                    text += "\(order[i]), you were incorrect! You guessed \(pastResults[i].guess!). The correct person was \(pastResults[i].answer!).\n"
                 }
             }
         }
