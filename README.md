@@ -8,4 +8,4 @@ Start screen gives start button for user to start the game.
 Main screen shows random MDB face and four name options to go with face. Here, the five second timer rings and the correct answer (in green) is shown before moving on to the next round.
 
 ![Test Image 3](https://github.com/patrickhaoy/Match-The-Members/blob/master/Statistics%20Screen.png)
-The statistics screen is shows the longest streak and the results of the previous three rounds.
+The statistics screen shows the longest streak and the results of the previous three rounds.
