@@ -10,11 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var matchTheMembers: UILabel!
+    var gameRunning: Bool!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        // Format "Match the Members" title
+        matchTheMembers.numberOfLines = 0
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! MainViewController
+        destinationVC.gameRunning = gameRunning
+    }
+    
+    @IBAction func mainStartPressed(_ sender: Any) {
+        gameRunning = true
+        self.performSegue(withIdentifier: "startToMain", sender: self)
+    }
 }
 
